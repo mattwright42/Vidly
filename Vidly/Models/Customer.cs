@@ -12,6 +12,7 @@ namespace Vidly.Models
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
+        public DateTime? CustomerBirthdate { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
         // Navigation Type: load an object and its related object together from the database
         public MembershipType MembershipType { get; set; }
