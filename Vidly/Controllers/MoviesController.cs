@@ -25,7 +25,7 @@ namespace Vidly.Controllers
 
         public ViewResult Index()
         {
-            var movies = _context.Movies.ToList();
+            var movies = _context.Movies.Include(m => m.Genre).ToList();
             return View(movies);
         }
 
@@ -37,7 +37,7 @@ namespace Vidly.Controllers
             //    new Movie { Id = 2, Name = "The Two Towers" },
             //    new Movie { Id = 3, Name = "The Return of the King" }
             //};
-            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+            var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
 
             if (movie == null)
                 return HttpNotFound();
