@@ -196,6 +196,18 @@
     <Compile Include="Migrations\201910241818185_SetsBirthdateToNullable.designer.cs">
       <DependentUpon>201910241818185_SetsBirthdateToNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910241835190_UpdatesMovieClassProperties.cs" />
+    <Compile Include="Migrations\201910241835190_UpdatesMovieClassProperties.designer.cs">
+      <DependentUpon>201910241835190_UpdatesMovieClassProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910241837213_SetsConstraintsOnMovieProperties.cs" />
+    <Compile Include="Migrations\201910241837213_SetsConstraintsOnMovieProperties.designer.cs">
+      <DependentUpon>201910241837213_SetsConstraintsOnMovieProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910241838132_PopulatesMovieDetails.cs" />
+    <Compile Include="Migrations\201910241838132_PopulatesMovieDetails.designer.cs">
+      <DependentUpon>201910241838132_PopulatesMovieDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -249,6 +261,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -293,6 +306,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910241818185_SetsBirthdateToNullable.resx">
       <DependentUpon>201910241818185_SetsBirthdateToNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910241835190_UpdatesMovieClassProperties.resx">
+      <DependentUpon>201910241835190_UpdatesMovieClassProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910241837213_SetsConstraintsOnMovieProperties.resx">
+      <DependentUpon>201910241837213_SetsConstraintsOnMovieProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910241838132_PopulatesMovieDetails.resx">
+      <DependentUpon>201910241838132_PopulatesMovieDetails.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
