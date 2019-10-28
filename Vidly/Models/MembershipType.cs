@@ -13,5 +13,9 @@ namespace Vidly.Models
         public byte DurationInMonths { get; set; }
         public byte DiscountRate { get; set; }
 
+        // Static fields added to make code more sustainable and readable (this is then referenced in the validation class)
+        public static readonly byte Unknown = 0;
+        public static readonly byte PayAsYouGo = 1;
+
     }
 }
