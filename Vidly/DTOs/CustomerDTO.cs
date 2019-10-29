@@ -24,5 +24,7 @@ namespace Vidly.DTOs
         // this is treated as a foreign key
         
         public byte MembershipTypeId { get; set; }
+
+        public MembershipTypeDTO MembershipType { get; set; }
     }
 }
