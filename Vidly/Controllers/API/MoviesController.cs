@@ -28,10 +28,13 @@ namespace Vidly.Controllers.API
         {
             var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
 
+            
+
             if (movie == null)
                 return NotFound();
-
+            
             return Ok(Mapper.Map<Movie, MovieDTO>(movie));
+            
         }
         
         [HttpPost]

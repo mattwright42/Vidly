@@ -10,6 +10,7 @@ namespace Vidly.ViewModels
     public class MovieFormViewModel
     {
         public IEnumerable<Genre> Genres { get; set; }
+        
 
         // public Movie Movie { get; set; }
         public int? Id { get; set; }
@@ -21,6 +22,8 @@ namespace Vidly.ViewModels
         [Display(Name = "Genre")]
         [Required]
         public byte? GenreId { get; set; }
+
+        
 
         [Display(Name = "Release Date")]
         [Required]
@@ -54,6 +57,9 @@ namespace Vidly.ViewModels
             ReleaseDate = movie.ReleaseDate;
             NumberInStock = movie.NumberInStock;
             GenreId = movie.GenreId;
+            
         }
     }
+
+
 }
