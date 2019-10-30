@@ -10,6 +10,28 @@
     <abbr title="Phone">P:</abbr>
     425.555.0100
 </address>
+<ul>
+<li>@Html.ActionLink("Home", "Index", "Home")</li>
+<li>
+    <a href="#">Customers</a>
+    <ul>
+        <li><a href="#">Create New</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">View All</a></li>
+    </ul>
+</li>
+<li>
+    <a href="#">Orders</a>
+    <ul>
+        <li><a href="#">Create New</a></li>
+        <li><a href="#">Latest: Last 30 Days</a></li>
+        <li><a href="#">Search: Date Range</a></li>
+        <li><a href="#">Search: Customer</a></li>
+        <li><a href="#">View All</a></li>
+    </ul>
+</li>
+<li>@Html.ActionLink("About", "About", "Home")</li>
+    </ul>
 
 <address>
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />

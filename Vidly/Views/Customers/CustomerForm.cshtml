@@ -6,7 +6,7 @@
 
 <h2>@Model.Title</h2>
 
-using (@Html.BeginForm("Save", "Customers"))
+@using (@Html.BeginForm("Save", "Customers"))
 {
 @Html.ValidationSummary(true, "Please fix the following errors: ")
 <div class="form-group">
