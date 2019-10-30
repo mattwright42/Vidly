@@ -11,13 +11,13 @@
     425.555.0100
 </address>
 <ul>
-<li>@Html.ActionLink("Home", "Index", "Home")</li>
-<li>
-    <a href="#">Customers</a>
-    <ul>
-        <li><a href="#">Create New</a></li>
-        <li><a href="#">Latest</a></li>
-        <li><a href="#">View All</a></li>
+<li>@Html.ActionLink("Home", "Index", "Home", new { @class = "btn btn-primary" })</li>
+<li class="dropdown">
+    <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Customers</a>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li class="dropdown-item"><a href="#">Create New</a></li>
+        <li class="dropdown-item"><a href="#">Latest</a></li>
+        <li class="dropdown-item"><a href="#">View All</a></li>
     </ul>
 </li>
 <li>
@@ -32,6 +32,17 @@
 </li>
 <li>@Html.ActionLink("About", "About", "Home")</li>
     </ul>
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a href="#" class="dropdown-item">Action</a>
+        <a href="#" class="dropdown-item">Another Action</a>
+        <a href="#" class="dropdown-item">Something else here</a>
+    </div>
+</div>
 
 <address>
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
