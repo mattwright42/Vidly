@@ -1,51 +1,20 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<hgroup>
+    <h2>@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+</hgroup>
+<div>
+    <address>
+        One Microsoft Way<br />
+        Redmond, WA 98052-6399<br />
+        <abbr title="Phone">P:</abbr>
+        425.555.0100
+    </address>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-<ul>
-    <h2>Helpful Links</h2>
-<li>@Html.ActionLink("Home", "Index", "Home", new { @class = "btn btn-primary" })</li>
-<li class="dropdown">
-    <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Customers</a>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li class="dropdown-item"><a href="http://localhost:62132/Customers/New">Create New</a></li>
-        <li class="dropdown-item"><a href="#">Latest</a></li>
-        <li class="dropdown-item"><a href="#">View All</a></li>
-    </ul>
-</li>
-<li class="dropdown">
-    <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li class="dropdown-item"><a href="#">Create New</a></li>
-        <li class="dropdown-item"><a href="#">Latest: Last 30 Days</a></li>
-        <li class="dropdown-item"><a href="#">Search: Date Range</a></li>
-        <li class="dropdown-item"><a href="#">Search: Customer</a></li>
-        <li class="dropdown-item"><a href="#">View All Genres</a></li>
-    </ul>
-</li class="dropdown">
-<li>@Html.ActionLink("About", "About", "Home")</li>
-    </ul>
-
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a href="#" class="dropdown-item">Action</a>
-        <a href="#" class="dropdown-item">Another Action</a>
-        <a href="#" class="dropdown-item">Something else here</a>
-    </div>
+    <address>
+        <i class="icon-envelope"></i><strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <i class="icon-envelope"></i><strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
 </div>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
